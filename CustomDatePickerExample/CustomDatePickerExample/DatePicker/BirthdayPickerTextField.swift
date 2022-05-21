@@ -45,6 +45,12 @@ final class BirthdayPickerTextField: InsetTextField {
         Publishers.Merge(tapRecognizer, buttonTapped).eraseToAnyPublisher()
     }
     
+    var dateOutput: AnyPublisher<String?, Never> {
+        $currentDate.eraseToAnyPublisher()
+    }
+    
+    @Published private var currentDate: String? = ""
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
@@ -68,9 +74,16 @@ final class BirthdayPickerTextField: InsetTextField {
                     self?.datePicker = nil
                     return
                 }
-                self?.text = date.toString(.custom(self?.dateFormat ?? ""))
+                self?.currentDate = date.toString(.custom(self?.dateFormat ?? ""))
             }
         }.store(in: &cancellables)
+        
+        $currentDate
+            .compactMap { $0 }
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] date in
+                self?.text = date
+            }.store(in: &cancellables)
     }
     
     private func setupUI() {
