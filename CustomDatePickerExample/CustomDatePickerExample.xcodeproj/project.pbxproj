@@ -1,0 +1,566 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE01DA772838F73A0019AE3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE01DA762838F73A0019AE3C /* AppDelegate.swift */; };
+		EE01DA792838F73A0019AE3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE01DA782838F73A0019AE3C /* SceneDelegate.swift */; };
+		EE01DA7B2838F73A0019AE3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE01DA7A2838F73A0019AE3C /* ViewController.swift */; };
+		EE01DA7E2838F73A0019AE3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE01DA7C2838F73A0019AE3C /* Main.storyboard */; };
+		EE01DA802838F73A0019AE3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE01DA7F2838F73A0019AE3C /* Assets.xcassets */; };
+		EE01DA832838F73A0019AE3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE01DA812838F73A0019AE3C /* LaunchScreen.storyboard */; };
+		EE01DABC2838FAB00019AE3C /* DialogDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE01DABB2838FAB00019AE3C /* DialogDatePickerView.swift */; };
+		EE01DAC02838FACA0019AE3C /* PickerDataSourceConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE01DABD2838FACA0019AE3C /* PickerDataSourceConfigurator.swift */; };
+		EE01DAC12838FACA0019AE3C /* ScrollBehaviorConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE01DABE2838FACA0019AE3C /* ScrollBehaviorConfigurator.swift */; };
+		EE01DAC22838FACA0019AE3C /* DateConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE01DABF2838FACA0019AE3C /* DateConfigurator.swift */; };
+		EE01DAC52838FAE70019AE3C /* DatePickerDataSourceConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE01DAC42838FAE70019AE3C /* DatePickerDataSourceConfigurator.swift */; };
+		EE01DAC72838FAF20019AE3C /* DatePickerDataSourceConfigurator+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE01DAC62838FAF20019AE3C /* DatePickerDataSourceConfigurator+Extension.swift */; };
+		EE01DAC92838FB060019AE3C /* DatePickerDateConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE01DAC82838FB060019AE3C /* DatePickerDateConfigurator.swift */; };
+		EE01DACB2838FB1C0019AE3C /* DatePickerScrollBehaviorConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE01DACA2838FB1C0019AE3C /* DatePickerScrollBehaviorConfigurator.swift */; };
+		EE01DACD2838FB280019AE3C /* DatePickerMonthType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE01DACC2838FB280019AE3C /* DatePickerMonthType.swift */; };
+		EE01DACF2838FB350019AE3C /* DatePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE01DACE2838FB350019AE3C /* DatePickerCell.swift */; };
+		EE01DAD12838FB470019AE3C /* DatePickerSingleSectionAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE01DAD02838FB470019AE3C /* DatePickerSingleSectionAdapter.swift */; };
+		EE01DAD32838FBBC0019AE3C /* BirthdayPickerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE01DAD22838FBBC0019AE3C /* BirthdayPickerTextField.swift */; };
+		EE01DAD62838FDA70019AE3C /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = EE01DAD52838FDA70019AE3C /* CombineCocoa */; };
+		EE01DAD82838FE180019AE3C /* PublishableMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE01DAD72838FE180019AE3C /* PublishableMainView.swift */; };
+		EE01DADA2838FEBB0019AE3C /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE01DAD92838FEBB0019AE3C /* InsetTextField.swift */; };
+		EE01DADC2838FEE50019AE3C /* IncreasedHitPointButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE01DADB2838FEE50019AE3C /* IncreasedHitPointButton.swift */; };
+		EE01DAEA2839015B0019AE3C /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE01DAE52839015B0019AE3C /* Reusable.swift */; };
+		EE01DAEF2839017C0019AE3C /* Renderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE01DAEE2839017C0019AE3C /* Renderable.swift */; };
+		EE01DAF1283901F10019AE3C /* String+DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE01DAF0283901F10019AE3C /* String+DateFormat.swift */; };
+		EE01DAF32839025B0019AE3C /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE01DAF22839025B0019AE3C /* AppButton.swift */; };
+		EE01DAF5283902780019AE3C /* ButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE01DAF4283902780019AE3C /* ButtonType.swift */; };
+		EE01DAF7283902E40019AE3C /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE01DAF6283902E40019AE3C /* UIView+Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EE01DA732838F73A0019AE3C /* CustomDatePickerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomDatePickerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE01DA762838F73A0019AE3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE01DA782838F73A0019AE3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EE01DA7A2838F73A0019AE3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EE01DA7D2838F73A0019AE3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE01DA7F2838F73A0019AE3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE01DA822838F73A0019AE3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE01DA842838F73A0019AE3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE01DABB2838FAB00019AE3C /* DialogDatePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogDatePickerView.swift; sourceTree = "<group>"; };
+		EE01DABD2838FACA0019AE3C /* PickerDataSourceConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerDataSourceConfigurator.swift; sourceTree = "<group>"; };
+		EE01DABE2838FACA0019AE3C /* ScrollBehaviorConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollBehaviorConfigurator.swift; sourceTree = "<group>"; };
+		EE01DABF2838FACA0019AE3C /* DateConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateConfigurator.swift; sourceTree = "<group>"; };
+		EE01DAC42838FAE70019AE3C /* DatePickerDataSourceConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerDataSourceConfigurator.swift; sourceTree = "<group>"; };
+		EE01DAC62838FAF20019AE3C /* DatePickerDataSourceConfigurator+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DatePickerDataSourceConfigurator+Extension.swift"; sourceTree = "<group>"; };
+		EE01DAC82838FB060019AE3C /* DatePickerDateConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerDateConfigurator.swift; sourceTree = "<group>"; };
+		EE01DACA2838FB1C0019AE3C /* DatePickerScrollBehaviorConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerScrollBehaviorConfigurator.swift; sourceTree = "<group>"; };
+		EE01DACC2838FB280019AE3C /* DatePickerMonthType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerMonthType.swift; sourceTree = "<group>"; };
+		EE01DACE2838FB350019AE3C /* DatePickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerCell.swift; sourceTree = "<group>"; };
+		EE01DAD02838FB470019AE3C /* DatePickerSingleSectionAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerSingleSectionAdapter.swift; sourceTree = "<group>"; };
+		EE01DAD22838FBBC0019AE3C /* BirthdayPickerTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BirthdayPickerTextField.swift; sourceTree = "<group>"; };
+		EE01DAD72838FE180019AE3C /* PublishableMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishableMainView.swift; sourceTree = "<group>"; };
+		EE01DAD92838FEBB0019AE3C /* InsetTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
+		EE01DADB2838FEE50019AE3C /* IncreasedHitPointButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncreasedHitPointButton.swift; sourceTree = "<group>"; };
+		EE01DAE52839015B0019AE3C /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		EE01DAEE2839017C0019AE3C /* Renderable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderable.swift; sourceTree = "<group>"; };
+		EE01DAF0283901F10019AE3C /* String+DateFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+DateFormat.swift"; sourceTree = "<group>"; };
+		EE01DAF22839025B0019AE3C /* AppButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
+		EE01DAF4283902780019AE3C /* ButtonType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonType.swift; sourceTree = "<group>"; };
+		EE01DAF6283902E40019AE3C /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE01DA702838F73A0019AE3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE01DAD62838FDA70019AE3C /* CombineCocoa in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE01DA6A2838F73A0019AE3C = {
+			isa = PBXGroup;
+			children = (
+				EE01DA752838F73A0019AE3C /* CustomDatePickerExample */,
+				EE01DA742838F73A0019AE3C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE01DA742838F73A0019AE3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE01DA732838F73A0019AE3C /* CustomDatePickerExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE01DA752838F73A0019AE3C /* CustomDatePickerExample */ = {
+			isa = PBXGroup;
+			children = (
+				EE01DAB32838F9A80019AE3C /* DatePicker */,
+				EE01DA762838F73A0019AE3C /* AppDelegate.swift */,
+				EE01DA782838F73A0019AE3C /* SceneDelegate.swift */,
+				EE01DA7A2838F73A0019AE3C /* ViewController.swift */,
+				EE01DA7C2838F73A0019AE3C /* Main.storyboard */,
+				EE01DA7F2838F73A0019AE3C /* Assets.xcassets */,
+				EE01DA812838F73A0019AE3C /* LaunchScreen.storyboard */,
+				EE01DA842838F73A0019AE3C /* Info.plist */,
+			);
+			path = CustomDatePickerExample;
+			sourceTree = "<group>";
+		};
+		EE01DAB32838F9A80019AE3C /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				EE01DAD92838FEBB0019AE3C /* InsetTextField.swift */,
+				EE01DAD72838FE180019AE3C /* PublishableMainView.swift */,
+				EE01DAD22838FBBC0019AE3C /* BirthdayPickerTextField.swift */,
+				EE01DABB2838FAB00019AE3C /* DialogDatePickerView.swift */,
+				EE01DAF828390BE30019AE3C /* Buttons */,
+				EE01DABA2838FA0B0019AE3C /* Adapter */,
+				EE01DAB92838FA040019AE3C /* Cells */,
+				EE01DAB82838F9FC0019AE3C /* Types */,
+				EE01DAB72838F9E60019AE3C /* ScrollBehavior */,
+				EE01DAB62838F9D60019AE3C /* DateConfigurator */,
+				EE01DAB42838F9B10019AE3C /* Protocols */,
+				EE01DAB52838F9BA0019AE3C /* DataSource */,
+				EE01DAF928390BF90019AE3C /* Extensions */,
+			);
+			path = DatePicker;
+			sourceTree = "<group>";
+		};
+		EE01DAB42838F9B10019AE3C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EE01DABF2838FACA0019AE3C /* DateConfigurator.swift */,
+				EE01DABD2838FACA0019AE3C /* PickerDataSourceConfigurator.swift */,
+				EE01DABE2838FACA0019AE3C /* ScrollBehaviorConfigurator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		EE01DAB52838F9BA0019AE3C /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				EE01DAC42838FAE70019AE3C /* DatePickerDataSourceConfigurator.swift */,
+				EE01DAC32838FAD80019AE3C /* Extensions */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		EE01DAB62838F9D60019AE3C /* DateConfigurator */ = {
+			isa = PBXGroup;
+			children = (
+				EE01DAC82838FB060019AE3C /* DatePickerDateConfigurator.swift */,
+			);
+			path = DateConfigurator;
+			sourceTree = "<group>";
+		};
+		EE01DAB72838F9E60019AE3C /* ScrollBehavior */ = {
+			isa = PBXGroup;
+			children = (
+				EE01DACA2838FB1C0019AE3C /* DatePickerScrollBehaviorConfigurator.swift */,
+			);
+			path = ScrollBehavior;
+			sourceTree = "<group>";
+		};
+		EE01DAB82838F9FC0019AE3C /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				EE01DACC2838FB280019AE3C /* DatePickerMonthType.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		EE01DAB92838FA040019AE3C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EE01DAE52839015B0019AE3C /* Reusable.swift */,
+				EE01DAEE2839017C0019AE3C /* Renderable.swift */,
+				EE01DACE2838FB350019AE3C /* DatePickerCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		EE01DABA2838FA0B0019AE3C /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				EE01DAD02838FB470019AE3C /* DatePickerSingleSectionAdapter.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		EE01DAC32838FAD80019AE3C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EE01DAC62838FAF20019AE3C /* DatePickerDataSourceConfigurator+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EE01DAF828390BE30019AE3C /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				EE01DADB2838FEE50019AE3C /* IncreasedHitPointButton.swift */,
+				EE01DAF4283902780019AE3C /* ButtonType.swift */,
+				EE01DAF22839025B0019AE3C /* AppButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		EE01DAF928390BF90019AE3C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EE01DAF6283902E40019AE3C /* UIView+Extensions.swift */,
+				EE01DAF0283901F10019AE3C /* String+DateFormat.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE01DA722838F73A0019AE3C /* CustomDatePickerExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE01DA872838F73A0019AE3C /* Build configuration list for PBXNativeTarget "CustomDatePickerExample" */;
+			buildPhases = (
+				EE01DA6F2838F73A0019AE3C /* Sources */,
+				EE01DA702838F73A0019AE3C /* Frameworks */,
+				EE01DA712838F73A0019AE3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomDatePickerExample;
+			packageProductDependencies = (
+				EE01DAD52838FDA70019AE3C /* CombineCocoa */,
+			);
+			productName = CustomDatePickerExample;
+			productReference = EE01DA732838F73A0019AE3C /* CustomDatePickerExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE01DA6B2838F73A0019AE3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					EE01DA722838F73A0019AE3C = {
+						CreatedOnToolsVersion = 13.4;
+					};
+				};
+			};
+			buildConfigurationList = EE01DA6E2838F73A0019AE3C /* Build configuration list for PBXProject "CustomDatePickerExample" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE01DA6A2838F73A0019AE3C;
+			packageReferences = (
+				EE01DAD42838FDA70019AE3C /* XCRemoteSwiftPackageReference "CombineCocoa" */,
+			);
+			productRefGroup = EE01DA742838F73A0019AE3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE01DA722838F73A0019AE3C /* CustomDatePickerExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE01DA712838F73A0019AE3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE01DA832838F73A0019AE3C /* LaunchScreen.storyboard in Resources */,
+				EE01DA802838F73A0019AE3C /* Assets.xcassets in Resources */,
+				EE01DA7E2838F73A0019AE3C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE01DA6F2838F73A0019AE3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE01DAC12838FACA0019AE3C /* ScrollBehaviorConfigurator.swift in Sources */,
+				EE01DACB2838FB1C0019AE3C /* DatePickerScrollBehaviorConfigurator.swift in Sources */,
+				EE01DABC2838FAB00019AE3C /* DialogDatePickerView.swift in Sources */,
+				EE01DA7B2838F73A0019AE3C /* ViewController.swift in Sources */,
+				EE01DAF1283901F10019AE3C /* String+DateFormat.swift in Sources */,
+				EE01DADA2838FEBB0019AE3C /* InsetTextField.swift in Sources */,
+				EE01DACD2838FB280019AE3C /* DatePickerMonthType.swift in Sources */,
+				EE01DAC72838FAF20019AE3C /* DatePickerDataSourceConfigurator+Extension.swift in Sources */,
+				EE01DAF32839025B0019AE3C /* AppButton.swift in Sources */,
+				EE01DAF5283902780019AE3C /* ButtonType.swift in Sources */,
+				EE01DACF2838FB350019AE3C /* DatePickerCell.swift in Sources */,
+				EE01DAC92838FB060019AE3C /* DatePickerDateConfigurator.swift in Sources */,
+				EE01DAF7283902E40019AE3C /* UIView+Extensions.swift in Sources */,
+				EE01DAC52838FAE70019AE3C /* DatePickerDataSourceConfigurator.swift in Sources */,
+				EE01DAEA2839015B0019AE3C /* Reusable.swift in Sources */,
+				EE01DAD12838FB470019AE3C /* DatePickerSingleSectionAdapter.swift in Sources */,
+				EE01DAEF2839017C0019AE3C /* Renderable.swift in Sources */,
+				EE01DAC22838FACA0019AE3C /* DateConfigurator.swift in Sources */,
+				EE01DA772838F73A0019AE3C /* AppDelegate.swift in Sources */,
+				EE01DAD32838FBBC0019AE3C /* BirthdayPickerTextField.swift in Sources */,
+				EE01DA792838F73A0019AE3C /* SceneDelegate.swift in Sources */,
+				EE01DAC02838FACA0019AE3C /* PickerDataSourceConfigurator.swift in Sources */,
+				EE01DAD82838FE180019AE3C /* PublishableMainView.swift in Sources */,
+				EE01DADC2838FEE50019AE3C /* IncreasedHitPointButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EE01DA7C2838F73A0019AE3C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE01DA7D2838F73A0019AE3C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE01DA812838F73A0019AE3C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE01DA822838F73A0019AE3C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE01DA852838F73A0019AE3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE01DA862838F73A0019AE3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE01DA882838F73A0019AE3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DU9B24YLDN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CustomDatePickerExample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.axon.CustomDatePickerExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE01DA892838F73A0019AE3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DU9B24YLDN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CustomDatePickerExample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.axon.CustomDatePickerExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE01DA6E2838F73A0019AE3C /* Build configuration list for PBXProject "CustomDatePickerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE01DA852838F73A0019AE3C /* Debug */,
+				EE01DA862838F73A0019AE3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE01DA872838F73A0019AE3C /* Build configuration list for PBXNativeTarget "CustomDatePickerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE01DA882838F73A0019AE3C /* Debug */,
+				EE01DA892838F73A0019AE3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EE01DAD42838FDA70019AE3C /* XCRemoteSwiftPackageReference "CombineCocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CombineCommunity/CombineCocoa.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EE01DAD52838FDA70019AE3C /* CombineCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE01DAD42838FDA70019AE3C /* XCRemoteSwiftPackageReference "CombineCocoa" */;
+			productName = CombineCocoa;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = EE01DA6B2838F73A0019AE3C /* Project object */;
+}
